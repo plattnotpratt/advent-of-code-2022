@@ -1,10 +1,11 @@
 # Day 1 of Advent of Code
 
-To run the code provided.
-    ```javascript
-    node problem1.js
-    node problem2.js
-    ```
+Run the code by typing the following into the command line.
+
+```javascript
+node problem1.js 
+node problem2.js
+```
 
 ### Problem 1
 This list (calories.txt) represents the Calories of the food carried by five Elves:
