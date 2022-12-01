@@ -1,7 +1,7 @@
 # Day 1 of Advent of Code
 
 To run the code provided.
-    ```
+    ```javascript
     node problem1.js
     node problem2.js
     ```
