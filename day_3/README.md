@@ -1,5 +1,10 @@
 # Day 3: Rucksack Reorganization
+Run the code by typing the following into the command line.
 
+```
+node problem1.js 
+node problem2.js
+```
 ### Problem 1
 ---
 One Elf has the important job of loading all of the rucksacks with supplies for the jungle journey. Unfortunately, that Elf didn't quite follow the packing instructions, and so a few items now need to be rearranged.

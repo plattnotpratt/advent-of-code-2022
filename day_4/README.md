@@ -1,5 +1,10 @@
 # Day 4: Camp Clean
+Run the code by typing the following into the command line.
 
+```
+node problem1.js 
+node problem2.js
+```
 ### Problem 1
 ---
 Space needs to be cleared before the last supplies can be unloaded from the ships, and so several Elves have been assigned the job of cleaning up sections of the camp. Every section has a unique ID number, and each Elf is assigned a range of section IDs.
