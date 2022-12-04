@@ -47,7 +47,7 @@ This example list uses single-digit section IDs to make it easier to draw; your 
 
 Some of the pairs have noticed that one of their assignments fully contains the other. For example, 2-8 fully contains 3-7, and 6-6 is fully contained by 4-6. In pairs where one assignment fully contains the other, one Elf in the pair would be exclusively cleaning sections their partner will already be cleaning, so these seem like the most in need of reconsideration. In this example, there are 2 such pairs.
 
-In how many assignment pairs does one range fully contain the other?
+**In how many assignment pairs does one range fully contain the other?**
 
 
 ### Problem 2
@@ -62,4 +62,4 @@ In the above example, the first two pairs (2-4,6-8 and 2-3,4-5) don't overlap, w
 - 2-6,4-8 overlaps in sections 4, 5, and 6.
 - So, in this example, the number of overlapping assignment pairs is 4.
 
-In how many assignment pairs do the ranges overlap?
+**In how many assignment pairs do the ranges overlap?**
