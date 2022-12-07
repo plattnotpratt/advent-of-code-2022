@@ -14,10 +14,8 @@ async function readInput(){
 }
 
 async function init(){
-  let totalSize = 0;
-  const dirTrace = [];
   const data = await readInput();
-  let dir = new Dir('/');
+  let dir = new Directory('/');
   const root = dir;
   for (let i = 1; i < data.length; i++){
     if(data[i][0] === '$'){
@@ -46,16 +44,15 @@ async function init(){
     }
     
   }
-  // console.log(totalSize);
-  // console.log(root.size);
+  const dirTrace = [];
   getAllDirectories(root);
   console.log(dirTrace);
-  //console.log(root);
+
 }
 
 
 
-class Dir{
+class Directory{
   size = 0;
   name = "";
   childDir = [];
@@ -65,16 +62,35 @@ class Dir{
     this.name = name;
   }
 
+  /**
+   * Function addChildDir(childDir)
+   * @param {Directory} childDir 
+   * Adds a child directory to the child directory array.
+   * Sets the new child directories parent directory to the current
+   * directory.
+   */
   addChildDir(childDir){
-    const cdir = new Dir(childDir);
+    const cdir = new Directory(childDir);
     cdir.setParentDir(this);
     this.childDir.push(cdir);
   }
 
+  /**
+   * Function setParentDir(dir)
+   * @param {Directory} dir 
+   * Takes a directory and sets it to the current directories parent
+   * directory.
+   */
   setParentDir(dir){
     this.parentDir = dir;
   }
 
+  /**
+   * Funciton addSize()
+   * @param {number} size 
+   * if there is a file the size is added to the current directory 
+   * and all parent directories recursively.
+   */
   addSize(size){
     this.size += size;
     if(this.parentDir != null){
@@ -82,10 +98,22 @@ class Dir{
     }
   }
 
+  /**
+   * function getName()
+   * @returns {string}
+   * returns the name of the directory.
+   */
   getName(){
     return this.name;
   }
 
+  /**
+   * Function getChildDirWithName(name)
+   * @param {string} name 
+   * @returns {Directory}
+   * finds a child dir within the current directory with a
+   * given name and return it as reference.
+   */
   getChildDirWithName(name){
     for(let i = 0; i < this.childDir.length; i++){
       if(this.childDir[i].getName() === name){
@@ -94,6 +122,12 @@ class Dir{
     }
   }
 
+  /**
+   * Function getParentDir()
+   * @returns {string | null}
+   * returns a reference to the parent directory of the current directory
+   * returns null if parent directory doesn't exist.
+   */ 
   getParentDir(){
     return this.parentDir;
   }
