@@ -44,11 +44,9 @@ class Tree{
     this.checkEast(data);
     this.checkSouth(data);
     this.checkWest(data);
-    console.log(this.score);
     for(let i = 0; i < this.score.length; i++){
       this.scenicScore = this.scenicScore * this.score[i];
     }
-    console.log(this.scenicScore);
     return this.scenicScore;
   }
   checkNorth(data){

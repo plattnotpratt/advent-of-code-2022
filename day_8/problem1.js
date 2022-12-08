@@ -18,7 +18,6 @@ async function init(){
   let visibleCount = 0;
   for(let i = 0; i < data.length; i++){
     for(let k = 0; k < data[i].length; k++){
-      
       if(data[i][k].isVisible(k, i, data)){
         visibleCount++;
       }
@@ -49,8 +48,6 @@ class Tree{
       this.checkSouth(data);
       this.checkWest(data);
     }
-    
-    console.log(this.visible, this.height, this.x, this.y);
 
     for(let v of this.visible){
       if(v == true){
