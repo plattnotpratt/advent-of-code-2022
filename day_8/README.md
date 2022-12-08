@@ -66,7 +66,7 @@ However, you can do even better: consider the tree of **height 5 in the middle o
 30373
 25512
 65332
-33**5**49
+33549
 35390
 ```
 - Looking up, its view is blocked at 2 trees (by another tree with a height of 5).
