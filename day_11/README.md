@@ -4,7 +4,6 @@ Run the code by typing the following into the command line.
 
 ```
 node problem1.js 
-node problem2.js
 ```
 ### Problem 1
 ---

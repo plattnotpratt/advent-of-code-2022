@@ -75,9 +75,9 @@ class Monkey{
 
   mTest(item){
     if(item % this.test == 0){
-      this.monkeyT.addItem(item);
+      this.monkeyT.addItem(this.test);
     }else{
-      this.monkeyF.addItem(item);
+      this.monkeyF.addItem(item % this.test);
     }
   }
 
@@ -98,7 +98,7 @@ class Monkey{
         item *= this.val;
       }
     }
-    item = Math.floor(item / 3);
+    // item = Math.floor(item / 3);
     this.mTest(item);
   }
   
